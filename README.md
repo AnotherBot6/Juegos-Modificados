@@ -1,4 +1,5 @@
 # Juegos-Modificados
 
-Carlos Alberto Mendoza Medina \n
+Carlos Alberto Mendoza Medina;
+
 Alejandro Pozos Aguirre
