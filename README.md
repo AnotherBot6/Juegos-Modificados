@@ -1,5 +1,5 @@
 # Juegos-Modificados
 
-Carlos Alberto Mendoza Medina
+Carlos Alberto Mendoza Medina [A01661896]
 
-Alejandro Pozos Aguirre
+Alejandro Pozos Aguirre [A01656017]
