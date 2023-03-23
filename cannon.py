@@ -55,10 +55,12 @@ def move():
         targets.append(target)
 
     for target in targets:
-        target.x -= 0.5
+        # Aumentar target.x aumenta la velocidad de las bolas azules
+        target.x -= 0.75
 
     if inside(ball):
-        speed.y -= 0.35
+        # Aumentar speed.x aumenta la gravedad del cañón
+        speed.y -= 0.15
         ball.move(speed)
 
     dupe = targets.copy()
@@ -73,8 +75,8 @@ def move():
     for target in targets:
         if not inside(target):
             return
-
-    ontimer(move, 50)
+    # Aumentar el segundo argumento de ontimer ralentiza el juego y viceversa
+    ontimer(move, 25)
 
 
 setup(420, 420, 370, 0)
