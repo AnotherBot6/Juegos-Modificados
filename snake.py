@@ -10,6 +10,7 @@ Exercises
 
 from random import randrange
 from turtle import *
+import random
 
 from freegames import square, vector
 
@@ -49,15 +50,19 @@ def move():
         snake.pop(0)
 
     clear()
-
+        
     for body in snake:
-        square(body.x, body.y, 9, 'black')
+        square(body.x, body.y, 9, colors[num_aleatorio])
 
-    square(food.x, food.y, 9, 'green')
+    square(food.x, food.y, 9, colors[num_aleatorio_dos])
     update()
     ontimer(move, 100)
 
-
+colors = ['black','yellow','green','blue','magenta']
+num_aleatorio = random.randint(0, 4)
+num_aleatorio_dos = random.randint(0, 4)
+while num_aleatorio ==num_aleatorio_dos :
+    num_aleatorio_dos = random.randint(0, 4)
 setup(420, 420, 370, 0)
 hideturtle()
 tracer(False)
